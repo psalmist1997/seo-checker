@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SEO Readiness Checker - Contentika</title>
+<meta name="description" content="Free SEO readiness checker by Contentika. Scan any URL for 31+ technical, on-page, and performance SEO signals. Get a scored, actionable audit in seconds."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://contentika.com/tools/seo-checker/"/>
+
+<!-- Open Graph -->
+<meta property="og:title" content="SEO Readiness Checker - Free Tool by Contentika"/>
+<meta property="og:description" content="Scan any URL for 31+ SEO checks across meta tags, performance, accessibility, and more. Free, no login required."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://contentika.com/tools/seo-checker/"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="SEO Readiness Checker - Free Tool by Contentika"/>
+<meta name="twitter:description" content="31+ SEO checks in seconds. Free, no login required."/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- ====================================================
+     CONTENTIKA SITE HEADER
+==================================================== -->
+<header class="site-header">
+  <div class="hdr-left">
+    <a href="https://contentika.com" class="hdr-logo-link" target="_blank" rel="noopener">
+      <img
+        src="https://contentika.com/wp-content/uploads/2022/02/LogoOrange-Logo-1024x342.png"
+        alt="Contentika - Data-Driven Content Marketing Agency"
+        class="hdr-logo-img"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+      />
+      <!-- SVG fallback logo if image fails to load -->
+      <div style="display:none;align-items:center;gap:10px">
+        <div style="width:34px;height:34px;background:linear-gradient(135deg,#FF6B2B,#ff9a5c);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:.85rem">C</div>
+        <span style="font-size:1.1rem;font-weight:800;letter-spacing:-.03em;color:#FF6B2B">Contentika</span>
+      </div>
+    </a>
+    <div class="hdr-divider"></div>
+    <div class="hdr-tool-badge">
+      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      SEO Checker Tool
+    </div>
+  </div>
+
+  <nav class="hdr-nav">
+    <a href="https://contentika.com/seo-services/" class="hdr-nav-link" target="_blank">SEO Services</a>
+    <a href="https://contentika.com/content-marketing-service/" class="hdr-nav-link" target="_blank">Content Marketing</a>
+    <a href="https://contentika.com/tools/" class="hdr-nav-link" target="_blank">Tools</a>
+    <a href="https://contentika.com/blogs/" class="hdr-nav-link" target="_blank">Blog</a>
+  </nav>
+
+  <a href="https://calendly.com/contentika/let-s-talk" class="hdr-cta" target="_blank" rel="noopener">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+    Free Consultation
+  </a>
+
+  <button class="hdr-mobile-menu" aria-label="Open navigation menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</header>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <button class="mobile-nav-close" aria-label="Close menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="https://contentika.com/seo-services/" class="mobile-nav-link" target="_blank">SEO Services</a>
+    <a href="https://contentika.com/content-marketing-service/" class="mobile-nav-link" target="_blank">Content Marketing</a>
+    <a href="https://contentika.com/tools/" class="mobile-nav-link" target="_blank">Tools</a>
+    <a href="https://contentika.com/blogs/" class="mobile-nav-link" target="_blank">Blog</a>
+    <a href="https://calendly.com/contentika/let-s-talk" class="mobile-nav-cta" target="_blank" rel="noopener">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+      Free Consultation
+    </a>
+  </div>
+</div>
+
+
+<!-- == LANDING ========================================= -->
+<div id="vLanding" class="view active">
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="grid-bg"></div>
+
+  <nav class="nav">
+    <div class="nav-logo">
+      <div class="logo-mark">AL</div>
+      AuditLens
+    </div>
+    <span class="nav-badge">FREE - 31+ SEO CHECKS</span>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-chip">
+      <span class="chip-dot"></span>
+      Free SEO Readiness Checker - Powered by Contentika
+    </div>
+
+    <h1 class="hero-h1">
+      The Professional<br/>
+      <span class="h1-accent">SEO Readiness Checker</span><br/>
+      <span style="font-size:.55em;font-weight:400;color:var(--t1);letter-spacing:-.02em">by Contentika</span>
+    </h1>
+    <p class="hero-sub">
+      Scan any URL for 31+ technical, on-page, accessibility, and performance SEO signals. Get a scored, actionable audit in under 10 seconds - free, no login required.
+    </p>
+
+    <div class="search-box" id="searchBox">
+      <div class="sb-prefix">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        https://
+      </div>
+      <input id="urlInput" class="sb-input" type="text" placeholder="yourwebsite.com" autocomplete="off" spellcheck="false" aria-label="Enter website URL to audit"/>
+      <button id="scanBtn" class="sb-btn">
+        <span id="btnLabel">Audit Site</span>
+        <svg id="btnIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <p class="search-hint" id="searchHint" aria-live="polite"></p>
+
+    <div class="examples">
+      <span class="ex-label">Try:</span>
+      <button class="ex-btn" onclick="App.quickScan('wikipedia.org')">wikipedia.org</button>
+      <button class="ex-btn" onclick="App.quickScan('bbc.com')">bbc.com</button>
+      <button class="ex-btn" onclick="App.quickScan('github.com')">github.com</button>
+    </div>
+
+    <!-- Scan History -->
+    <div class="history-section" id="historySection" style="display:none">
+      <div class="history-title">Recent Scans</div>
+      <div class="history-list"></div>
+      <button class="history-clear" id="clearHistoryBtn">Clear history</button>
+    </div>
+
+    <div class="features" style="margin-top:32px">
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v4H4zM4 12h10v4H4zM4 20h6v-4H4z"/></svg>
+        </div>
+        <div class="feat-title">Meta & Social Tags</div>
+        <div class="feat-desc">Title, description, viewport, canonical, robots, Open Graph, Twitter Cards</div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="feat-title">Performance Signals</div>
+        <div class="feat-desc">Page size, render-blocking scripts, CSS count, lazy loading, preconnect</div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+        </div>
+        <div class="feat-title">Content Structure</div>
+        <div class="feat-desc">H1-H6 visual tree, word count, link analysis, readability scoring</div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="feat-title">Technical & Accessibility</div>
+        <div class="feat-desc">HTTPS, schema, ARIA landmarks, form labels, hreflang, favicon</div>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+<!-- == SCANNING ======================================== -->
+<div id="vScanning" class="view">
+  <div class="scan-wrap">
+    <div class="hex-scanner">
+      <svg class="hex-svg" viewBox="0 0 180 180" fill="none">
+        <path d="M90 4 L166 47 L166 133 L90 176 L14 133 L14 47 Z" stroke="rgba(0,212,170,.2)" stroke-width="1"/>
+        <path d="M90 20 L154 56 L154 124 L90 160 L26 124 L26 56 Z" stroke="rgba(0,212,170,.12)" stroke-width="1" stroke-dasharray="4 8"/>
+        <circle cx="90" cy="4" r="3" fill="#00d4aa" opacity=".6"/>
+        <circle cx="166" cy="47" r="3" fill="#00d4aa" opacity=".4"/>
+        <circle cx="166" cy="133" r="3" fill="#00d4aa" opacity=".6"/>
+        <circle cx="90" cy="176" r="3" fill="#00d4aa" opacity=".4"/>
+        <circle cx="14" cy="133" r="3" fill="#00d4aa" opacity=".6"/>
+        <circle cx="14" cy="47" r="3" fill="#00d4aa" opacity=".4"/>
+      </svg>
+      <svg class="hex-svg-rev" viewBox="0 0 160 160" fill="none">
+        <path d="M80 8 L144 44 L144 116 L80 152 L16 116 L16 44 Z" stroke="rgba(0,212,170,.15)" stroke-width="1.5" stroke-dasharray="3 6"/>
+      </svg>
+      <div class="hex-inner">
+        <div class="hex-pct" id="hexPct">0%</div>
+        <div class="hex-label">SCANNING</div>
+      </div>
+    </div>
+
+    <div class="scan-info">
+      <div class="scan-url" id="scanUrlLabel">-</div>
+      <div class="scan-bar-wrap">
+        <div class="scan-bar" id="scanBar"></div>
+      </div>
+      <div class="scan-step-text" id="scanStepText">Initializing...</div>
+      <div class="scan-steps" id="scanSteps"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- == RESULTS ========================================= -->
+<div id="vResults" class="view">
+
+  <div class="res-topbar">
+    <button class="res-back" id="backBtn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      New Audit
+    </button>
+    <span class="res-url" id="resUrl"></span>
+    <button class="res-copy-btn" id="shareBtn" title="Copy shareable link">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+      Share
+    </button>
+    <button class="res-copy-btn" id="exportBtn" title="Export full report as text file">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Export TXT
+    </button>
+    <button class="res-copy-btn" id="exportJsonBtn" title="Export as JSON">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      JSON
+    </button>
+    <button class="res-copy-btn" id="printBtn" title="Print report">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Print
+    </button>
+    <button class="res-copy-btn" id="copyBtn">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+      Copy Report
+    </button>
+  </div>
+
+  <div class="res-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- Score -->
+      <div class="score-card">
+        <div class="sc-eyebrow">Overall SEO Score</div>
+        <div class="sc-ring-wrap">
+          <svg class="sc-svg" viewBox="0 0 140 140">
+            <circle class="sc-track" cx="70" cy="70" r="55"/>
+            <circle class="sc-fill" cx="70" cy="70" r="55" id="scFill"/>
+          </svg>
+          <div class="sc-inner">
+            <div class="sc-num" id="scNum">0</div>
+            <div class="sc-of">/100</div>
+            <div class="sc-grade" id="scGrade">-</div>
+          </div>
+        </div>
+        <div class="sc-scanned" id="scMeta"></div>
+      </div>
+
+      <!-- Quick stats -->
+      <div class="qstats">
+        <div class="qs fail">
+          <div class="qs-num" id="qsFail">0</div>
+          <div class="qs-label">Failed</div>
+        </div>
+        <div class="qs warn">
+          <div class="qs-num" id="qsWarn">0</div>
+          <div class="qs-label">Warnings</div>
+        </div>
+        <div class="qs pass">
+          <div class="qs-num" id="qsPass">0</div>
+          <div class="qs-label">Passed</div>
+        </div>
+      </div>
+
+      <!-- Category breakdown -->
+      <div class="cat-breakdown">
+        <div class="cb-title">Category Scores</div>
+        <div id="cbRows"></div>
+      </div>
+
+      <!-- Page snapshot -->
+      <div class="page-snap">
+        <div class="ps-title">Page Snapshot</div>
+        <div id="psRows"></div>
+      </div>
+
+    </aside>
+
+    <!-- MAIN PANEL -->
+    <main class="main-panel">
+      <!-- Filter bar -->
+      <div class="filter-bar">
+        <div class="fb-tabs">
+          <button class="fb-tab active" data-f="all">All <span class="fb-badge" id="fbAll">0</span></button>
+          <button class="fb-tab fail" data-f="fail">Failed <span class="fb-badge" id="fbFail">0</span></button>
+          <button class="fb-tab warn" data-f="warn">Warnings <span class="fb-badge" id="fbWarn">0</span></button>
+          <button class="fb-tab pass" data-f="pass">Passed <span class="fb-badge" id="fbPass">0</span></button>
+        </div>
+        <div class="fb-search-wrap">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" class="fb-search" id="fbSearch" placeholder="Filter checks..." aria-label="Filter checks"/>
+        </div>
+      </div>
+
+      <!-- Checks -->
+      <div class="audit-list" id="auditList"></div>
+    </main>
+  </div>
+</div>
+
+
+<!-- ERROR / SUCCESS TOAST -->
+<div class="toast" id="toast">
+  <span class="toast-icon">!</span>
+  <span class="toast-msg" id="toastMsg"></span>
+  <button class="toast-close" onclick="document.getElementById('toast').classList.remove('show','success')" aria-label="Close notification">x</button>
+</div>
+
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+
+<!-- ====================================================
+     WHY SEO MATTERS (landing only)
+==================================================== -->
+<section class="why-section" id="whySection">
+  <div class="why-inner">
+
+    <!-- Top: text + stats -->
+    <div class="why-top">
+      <div class="why-text-col">
+        <div class="why-eyebrow">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Why SEO Readiness Matters
+        </div>
+        <h2 class="why-h2">
+          A Bad SEO Score<br/>
+          <span>Costs You Customers</span><br/>
+          Every Day
+        </h2>
+        <p class="why-desc">
+          Search engines are the #1 source of trackable web traffic - yet most websites leave enormous ranking potential on the table due to fixable technical issues. Missing meta tags, broken canonical URLs, unoptimised images, and render-blocking scripts silently suppress your rankings, costing you clicks, leads, and revenue while competitors pull ahead.
+        </p>
+        <p class="why-desc" style="margin-bottom:28px">
+          AuditLens surfaces these issues in seconds, with clear explanations and prioritised fixes. Contentika's team of SEO specialists can then implement every improvement - turning your audit score into real organic growth.
+        </p>
+        <a href="https://contentika.com/seo-services/" class="why-learn-link" target="_blank">
+          Explore our SEO services
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="why-stats-col">
+        <div class="wstat">
+          <div class="wstat-num">68%</div>
+          <div class="wstat-label">of all online experiences begin with a search engine query</div>
+        </div>
+        <div class="wstat">
+          <div class="wstat-num">53%</div>
+          <div class="wstat-label">of website traffic comes from organic search - the largest single channel</div>
+        </div>
+        <div class="wstat">
+          <div class="wstat-num">3.5x</div>
+          <div class="wstat-label">more traffic captured by pages on page 1 vs. page 2 of Google results</div>
+        </div>
+        <div class="wstat">
+          <div class="wstat-num">0.63%</div>
+          <div class="wstat-label">of searchers click results on page 2 - virtually invisible if you rank there</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom: how it works steps -->
+    <div class="why-cards-title">How AuditLens Works</div>
+    <div class="why-cards">
+      <div class="wcard">
+        <div class="wcard-num">STEP 01</div>
+        <div class="wcard-icon">&#128269;</div>
+        <div class="wcard-title">Enter Your URL</div>
+        <div class="wcard-desc">Paste any public domain into the scanner. No login, no signup - just your URL.</div>
+        <div class="wcard-connector"></div>
+      </div>
+      <div class="wcard">
+        <div class="wcard-num">STEP 02</div>
+        <div class="wcard-icon">&#9889;</div>
+        <div class="wcard-title">Instant Fetch & Parse</div>
+        <div class="wcard-desc">We fetch your live page via a secure proxy and parse the full HTML document in real time.</div>
+        <div class="wcard-connector"></div>
+      </div>
+      <div class="wcard">
+        <div class="wcard-num">STEP 03</div>
+        <div class="wcard-icon">&#129514;</div>
+        <div class="wcard-title">31+ SEO Checks</div>
+        <div class="wcard-desc">Across meta tags, Open Graph, headings, schema, readability, images, HTTPS, accessibility, and more.</div>
+        <div class="wcard-connector"></div>
+      </div>
+      <div class="wcard">
+        <div class="wcard-num">STEP 04</div>
+        <div class="wcard-icon">&#128202;</div>
+        <div class="wcard-title">Scored Report</div>
+        <div class="wcard-desc">Get a 0-100 score, per-category breakdown, visual heading tree, and actionable fixes.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     CONTENTIKA SITE FOOTER
+==================================================== -->
+<footer class="site-footer" id="siteFooter">
+  <div class="footer-main">
+
+    <!-- Brand col -->
+    <div class="footer-brand">
+      <a href="https://contentika.com" target="_blank" rel="noopener">
+        <img
+          src="https://contentika.com/wp-content/uploads/2022/02/LogoOrange-Logo-1024x342.png"
+          alt="Contentika"
+          class="footer-logo-img"
+          onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\'font-size:1.1rem;font-weight:800;color:#FF6B2B;margin-bottom:14px\'>Contentika</div>')"
+        />
+      </a>
+      <p class="footer-tagline">
+        Data-driven content marketing &amp; SEO agency. We help businesses build visibility, thought leadership, and sustainable growth.
+      </p>
+      <div class="footer-socials">
+        <a href="https://twitter.com/contentika" class="footer-social" target="_blank" aria-label="Twitter/X" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.738-8.835L1.254 2.25H8.08l4.263 5.634 5.901-5.634zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/contentika" class="footer-social" target="_blank" aria-label="LinkedIn" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/contentika" class="footer-social" target="_blank" aria-label="Facebook" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Services col -->
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="https://contentika.com/seo-services/" target="_blank">SEO Services</a></li>
+        <li><a href="https://contentika.com/content-marketing-service/" target="_blank">Content Marketing</a></li>
+        <li><a href="https://contentika.com/website/" target="_blank">Website Design</a></li>
+        <li><a href="https://contentika.com/multimedia/" target="_blank">Multimedia</a></li>
+        <li><a href="https://contentika.com/training/" target="_blank">Training & Consulting</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources col -->
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="https://contentika.com/blogs/" target="_blank">Blog</a></li>
+        <li><a href="https://contentika.com/case-studies/" target="_blank">Case Studies</a></li>
+        <li><a href="https://contentika.com/downloads/" target="_blank">Ebooks & Templates</a></li>
+        <li><a href="https://contentika.com/tools/" target="_blank">Free Tools</a></li>
+      </ul>
+    </div>
+
+    <!-- Company col -->
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="https://contentika.com/about-us/" target="_blank">About Us</a></li>
+        <li><a href="https://contentika.com/verticals/" target="_blank">Industries</a></li>
+        <li><a href="https://contentika.com/contact/" target="_blank">Contact</a></li>
+        <li><a href="https://calendly.com/contentika/let-s-talk" target="_blank">Book a Call</a></li>
+      </ul>
+
+      <div style="margin-top:20px">
+        <div class="footer-col-title">This Tool</div>
+        <ul class="footer-links">
+          <li><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">SEO Checker</a></li>
+          <li><a href="https://contentika.com/tools/" target="_blank">All Tools</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      &copy; 2026 <a href="https://contentika.com" target="_blank">Contentika</a> - All rights reserved -
+      AuditLens SEO Checker is a free tool by Contentika
+    </div>
+    <div class="footer-badges">
+      <span class="footer-badge">Free Tool</span>
+      <span class="footer-badge">No Login Required</span>
+      <span class="footer-badge">31+ SEO Checks</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scripts (order matters: dependencies first) -->
+<script src="js/analyzers.js"></script>
+<script src="js/scorer.js"></script>
+<script src="js/scanner.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/history.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
